@@ -8,18 +8,9 @@ const style = StyleSheet.create({
     alignItems: "center",
     marginTop: size.height / 8,
   },
-  circle: {
-    backgroundColor: "#663399",
-    color: "white",
-    width: 100,
-    height: 100,
-    borderRadius: 100 / 2,
-    marginBottom: size.height / 4,
-    textAlign: "center",
-    fontWeight: "bold",
-    fontSize: 50,
-    textAlignVertical: "center",
+  avatar: {
     marginTop: 10,
+    marginBottom: size.height / 4,
   },
   subtext: {
     fontSize: 24,

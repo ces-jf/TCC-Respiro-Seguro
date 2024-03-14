@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { Button, Text } from "react-native-paper";
+import { Button, Text, Avatar } from "react-native-paper";
 import style from "./style";
 
 export default function Respostas({ navigation, route }) {
@@ -14,7 +14,7 @@ export default function Respostas({ navigation, route }) {
       )}
       {resposta >= 11 && <Text style={style.textSevera}>Depressão Severa</Text>}
       <Text style={style.text}>Pontos Na Escala GDS</Text>
-      <Text style={style.circle}>{resposta}</Text>
+      <Avatar.Text size={100} label={resposta} style={style.avatar} />
       <View style={style.button}>
         <Button mode="contained" onPress={() => navigation.navigate("Home")}>
           Finalizar
