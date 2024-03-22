@@ -9,6 +9,7 @@ import {
   MD3LightTheme as DefaultTheme,
   PaperProvider,
 } from "react-native-paper";
+import ParteOne from "./src/Screens/ParteOne/ParteOne";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,9 +37,18 @@ export default function App() {
             <Stack.Screen
               name="Perguntas"
               component={Perguntas}
-              options={{ headerShown: true }}
+              options={{ headerShown: false }}
             />
-            <Stack.Screen name="Respostas" component={Respostas} />
+            <Stack.Screen
+              name="Respostas"
+              component={Respostas}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="ParteOne"
+              component={ParteOne}
+              options={{ title: "Parte I" }}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>

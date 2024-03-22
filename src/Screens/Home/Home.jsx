@@ -1,47 +1,25 @@
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 
-import { View } from "react-native";
-import Logo from "../../components/Logo/Logo";
+import { ImageBackground, View } from "react-native";
+import { Button, Text } from "react-native-paper";
 import style from "./style";
-import { Button, Tooltip, IconButton, Dialog, Text } from "react-native-paper";
 
 export default function Home({ navigation }) {
-  const [visible, setVisible] = useState(false);
-
-  const hideDialog = () => setVisible(false);
-
-  const showDialog = () => setVisible(true);
-
+  const uri = require("../../../assets/logo_transparente.png");
   return (
     <View style={style.header}>
-      <Text style={style.text}>Bem vindo!</Text>
-      <Text style={style.text}>Respiro Seguro</Text>
-      <Logo />
-      <Button mode="contained" onPress={() => navigation.navigate("Perguntas")}>
-        Inicia diagnóstico
-      </Button>
-      <Tooltip title="Selected Camera">
-        <IconButton
-          icon="information-outline"
-          selected
-          size={24}
-          onPress={() => showDialog()}
-        />
-      </Tooltip>
-      <Dialog visible={visible} onDismiss={hideDialog}>
-        <Dialog.Title>Importante</Dialog.Title>
-        <Dialog.Content>
-          <Text variant="bodyMedium">
-            O aplicativo deve ser usado por profissionais de saúde.
-          </Text>
-          <Text variant="bodyMedium">
-            Não utilize o aplicativo para auto-diagnóstico.
-          </Text>
-        </Dialog.Content>
-        <Dialog.Actions>
-          <Button onPress={hideDialog}>Fechar</Button>
-        </Dialog.Actions>
-      </Dialog>
+      <ImageBackground source={uri} style={style.image}>
+        <Text style={style.text}>Bem vindo!</Text>
+        <Text style={style.text}>Respiro Seguro</Text>
+        <Button
+          style={style.botao}
+          buttonColor="#fbc02d"
+          mode="contained"
+          onPress={() => navigation.navigate("Perguntas")}
+        >
+          Inicia diagnóstico
+        </Button>
+      </ImageBackground>
     </View>
   );
 }

@@ -6,13 +6,24 @@ const style = StyleSheet.create({
   header: {
     flexDirection: "column",
     alignItems: "center",
-    marginTop: size.height / 8,
   },
   text: {
-    fontSize: 30,
-    color: "#663399",
+    fontSize: 35,
+    color: "black",
     fontWeight: "bold",
     textAlign: "center",
+  },
+  image: {
+    resizeMode: "cover",
+    justifyContent: "center",
+    width: size.width,
+    height: size.height,
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  botao: {
+    marginTop: size.height / 3,
+    width: size.width / 2,
   },
 });
 
