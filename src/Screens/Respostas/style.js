@@ -29,13 +29,11 @@ const style = StyleSheet.create({
     fontSize: 18,
     color: "#665a6f",
     fontWeight: "bold",
-    fontSize: 10,
   },
   textSevera: {
     fontSize: 18,
     color: "#d32f2f",
     fontWeight: "bold",
-    fontSize: 10,
   },
   button: {
     marginBottom: 10,
