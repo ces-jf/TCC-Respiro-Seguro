@@ -1,18 +1,24 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StatusBar, StyleSheet } from "react-native";
 
 const size = Dimensions.get("screen");
 
 const style = StyleSheet.create({
-  header: {
-    flexDirection: "column",
-    alignItems: "left",
-    marginTop: size.height / 20,
+  container: {
+    flex: 1,
+    paddingTop: StatusBar.currentHeight / 2,
+  },
+  title: {
+    fontSize: 25,
+    textAlign: "center",
+    fontWeight: "bold",
   },
   radioGroup: {
     fontSize: 20,
   },
   text: {
-    padding: 1,
+    padding: 3,
+    fontWeight: "bold",
+    marginRight: 5,
   },
   view: {
     flexDirection: "row",
@@ -31,6 +37,14 @@ const style = StyleSheet.create({
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     backgroundColor: "#f5f1a4",
+  },
+  image: {
+    resizeMode: "cover",
+    justifyContent: "center",
+    width: size.width,
+    height: size.height,
+    flexDirection: "column",
+    alignItems: "center",
   },
 });
 

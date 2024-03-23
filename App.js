@@ -1,32 +1,21 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
+import { PaperProvider } from "react-native-paper";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import Answers from "./src/Screens/Answers/Answers";
 import Home from "./src/Screens/Home/Home";
-import Perguntas from "./src/Screens/Perguntas/Perguntas";
-import Respostas from "./src/Screens/Respostas/Respostas";
-import {
-  MD3LightTheme as DefaultTheme,
-  PaperProvider,
-} from "react-native-paper";
-import ParteOne from "./src/Screens/ParteOne/ParteOne";
+import PartOne from "./src/Screens/PartOne/PartOne";
+import PartThree from "./src/Screens/PartThree/PartThree";
+import PartTwo from "./src/Screens/PartTwo/PartTwo";
+import Questions from "./src/Screens/Questions/Questions";
 
 const Stack = createNativeStackNavigator();
-
-const theme = {
-  ...DefaultTheme,
-  // Specify custom property
-  myOwnProperty: true,
-  // Specify custom property in nested object
-  colors: {
-    ...DefaultTheme.colors,
-  },
-};
 
 export default function App() {
   return (
     <SafeAreaProvider>
-      <PaperProvider theme={theme}>
+      <PaperProvider>
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Home">
             <Stack.Screen
@@ -35,19 +24,29 @@ export default function App() {
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="Perguntas"
-              component={Perguntas}
+              name="Questions"
+              component={Questions}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="Respostas"
-              component={Respostas}
+              name="Answers"
+              component={Answers}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="ParteOne"
-              component={ParteOne}
-              options={{ title: "Parte I" }}
+              name="PartOne"
+              component={PartOne}
+              options={{ title: "Parte I", headerShown: false }}
+            />
+            <Stack.Screen
+              name="PartTwo"
+              component={PartTwo}
+              options={{ title: "Parte II", headerShown: false }}
+            />
+            <Stack.Screen
+              name="PartThree"
+              component={PartThree}
+              options={{ title: "Parte III", headerShown: false }}
             />
           </Stack.Navigator>
         </NavigationContainer>

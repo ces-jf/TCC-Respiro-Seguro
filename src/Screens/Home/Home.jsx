@@ -15,7 +15,7 @@ export default function Home({ navigation }) {
           style={style.botao}
           buttonColor="#fbc02d"
           mode="contained"
-          onPress={() => navigation.navigate("Perguntas")}
+          onPress={() => navigation.navigate("Questions")}
         >
           Inicia diagnóstico
         </Button>
