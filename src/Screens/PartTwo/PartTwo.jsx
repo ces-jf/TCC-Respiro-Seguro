@@ -116,7 +116,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor()}
                       >
                         Limpar
@@ -159,7 +159,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor2()}
                       >
                         Limpar
@@ -200,7 +200,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor3()}
                       >
                         Limpar
@@ -244,7 +244,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor4()}
                       >
                         Limpar
@@ -294,7 +294,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor5()}
                       >
                         Limpar
@@ -342,7 +342,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor6()}
                       >
                         Limpar
@@ -390,7 +390,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor7()}
                       >
                         Limpar
@@ -433,7 +433,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor8()}
                       >
                         Limpar
@@ -478,7 +478,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor9()}
                       >
                         Limpar
@@ -521,7 +521,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor10()}
                       >
                         Limpar
@@ -563,7 +563,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor11()}
                       >
                         Limpar
@@ -606,7 +606,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor12()}
                       >
                         Limpar
@@ -649,7 +649,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor13()}
                       >
                         Limpar
@@ -694,7 +694,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor14()}
                       >
                         Limpar
@@ -738,7 +738,7 @@ export default function PartTwo({ navigation, route }) {
                     >
                       <Button
                         mode="text"
-                        textColor="#fbc02d"
+                        textColor="black"
                         onPress={() => setValor15()}
                       >
                         Limpar

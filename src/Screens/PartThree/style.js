@@ -3,6 +3,10 @@ import { Dimensions, StatusBar, StyleSheet } from "react-native";
 const size = Dimensions.get("screen");
 
 const style = StyleSheet.create({
+  header: {
+    flexDirection: "column",
+    alignItems: "center",
+  },
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight / 2,
@@ -45,6 +49,23 @@ const style = StyleSheet.create({
     height: size.height,
     flexDirection: "column",
     alignItems: "center",
+  },
+  card: {
+    opacity: 0.7,
+    marginBottom: 20,
+    backgroundColor: "#fbc02d",
+    margin: 5,
+  },
+  cardText: {
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 14,
+  },
+  button: {
+    marginBottom: 20,
+    marginLeft: 100,
+    alignItems: "center",
+    flexDirection: "row",
   },
 });
 

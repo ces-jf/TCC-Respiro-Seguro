@@ -12,7 +12,7 @@ const style = StyleSheet.create({
     backgroundColor: "#fbc02d",
     fontWeight: "bold",
     marginTop: 10,
-    marginBottom: size.height / 4,
+    marginBottom: 15,
   },
   subtext: {
     fontSize: 24,
@@ -36,7 +36,7 @@ const style = StyleSheet.create({
     fontWeight: "bold",
   },
   button: {
-    marginBottom: 10,
+    marginBottom: 50,
     alignItems: "center",
     flexDirection: "row",
   },
@@ -47,6 +47,17 @@ const style = StyleSheet.create({
     height: size.height,
     flexDirection: "column",
     alignItems: "center",
+  },
+  card: {
+    opacity: 0.7,
+    marginBottom: size.height / 5,
+    backgroundColor: "#fbc02d",
+    margin: 5,
+  },
+  cardText: {
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 14,
   },
 });
 
