@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StatusBar, StyleSheet } from "react-native";
 
 const size = Dimensions.get("screen");
 
@@ -6,7 +6,11 @@ const style = StyleSheet.create({
   header: {
     flexDirection: "column",
     alignItems: "center",
-    marginTop: size.height / 8,
+    marginTop: 20,
+  },
+  container: {
+    flex: 1,
+    paddingTop: StatusBar.currentHeight / 2,
   },
   avatar: {
     backgroundColor: "#fbc02d",
@@ -27,12 +31,12 @@ const style = StyleSheet.create({
   },
   textLeve: {
     fontSize: 18,
-    color: "#665a6f",
+    color: "#DBA020",
     fontWeight: "bold",
   },
   textSevera: {
     fontSize: 18,
-    color: "#d32f2f",
+    color: "#FF5E6E",
     fontWeight: "bold",
   },
   button: {

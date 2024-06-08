@@ -4,8 +4,8 @@ import {
   Button,
   Dialog,
   RadioButton as RadioButtonPaper,
-  Text,
   Surface,
+  Text,
 } from "react-native-paper";
 import style from "./style";
 
